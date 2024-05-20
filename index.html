@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionnaire de Tâches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestionnaire de Tâches</h1>
+        
+        <!-- Formulaire pour ajouter une tâche -->
+        <form id="task-form">
+            <div>
+                <label for="task-title">Titre de la tâche :</label>
+                <input type="text" id="task-title" required>
+            </div>
+            <div>
+                <label for="task-deadline">Date limite :</label>
+                <input type="date" id="task-deadline" required>
+            </div>
+            <div>
+                <label for="task-endtime">Heure de fin :</label>
+                <input type="time" id="task-endtime" required>
+            </div>
+            <div>
+                <label for="task-comment">Commentaire :</label>
+                <textarea id="task-comment"></textarea>
+            </div>
+            <button type="submit">Ajouter Tâche</button>
+        </form>
+        
+        <!-- Liste des tâches -->
+        <ul id="task-list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
